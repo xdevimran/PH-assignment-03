@@ -92,12 +92,17 @@
             </label>
             <ul
               tabindex="0"
-              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              class="menu menu-sm dropdown-content mt-3 z-[10] p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li><a>Home</a></li>
               <li><a>About Us</a></li>
               <li><a>Shop</a></li>
               <li><a>All Fruits</a></li>
+              <input
+            class="outline-none rounded-full py-2 px-5 text-black"
+            type="text"
+            placeholder="Search here"
+          />
             </ul>
           </div>
         </div>
@@ -105,11 +110,15 @@
       <!-- slider section start  -->
       <div class="container mx-auto relative flex items-center justify-center">
         <div class="absolute text-center space-y-4 z-10">
-          <h1 class="lg:text-7xl text-3xl font-extrabold text-white">
+          <h1
+            class="lg:text-7xl md:text-3xl sm:text-xl font-extrabold text-white"
+          >
             Exotic tastes at your <br />
             doorstep
           </h1>
-          <p class="text-white">We supply highly quality organic products</p>
+          <p class="text-white lg:text-2xl sm:text-xs">
+            We supply highly quality organic products
+          </p>
           <button
             class="btn bg-red-500 border-none hover:text-red-500 hover:bg-white hover:border-red-500 text-white"
           >
@@ -118,7 +127,7 @@
         </div>
         <div class="carousel w-full">
           <div id="slide1" class="carousel-item relative w-full">
-            <img src="./images/banner1.png" class="w-full" />
+            <img src="./images/banner-1-dark.png" class="w-full" />
 
             <div
               class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
@@ -128,7 +137,7 @@
             </div>
           </div>
           <div id="slide2" class="carousel-item relative w-full">
-            <img src="./images/banner2.png" class="w-full" />
+            <img src="./images/banner-2-dark.png" class="w-full" />
             <div
               class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
             >
@@ -137,7 +146,7 @@
             </div>
           </div>
           <div id="slide3" class="carousel-item relative w-full">
-            <img src="./images/banner3.png" class="w-full" />
+            <img src="./images/banner-3-dark.png" class="w-full" />
             <div
               class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
             >
@@ -146,7 +155,7 @@
             </div>
           </div>
           <div id="slide4" class="carousel-item relative w-full">
-            <img src="./images/banner4.png" class="w-full" />
+            <img src="./images/banner-4-dark.png" class="w-full" />
             <div
               class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
             >
@@ -887,7 +896,7 @@
       </section>
       <!-- team section  -->
       <section
-        style="background-image: url(./images/team.png)"
+        style="background-image: url(./images/team-dark.png)"
         class="team-section py-20 bg-no-repeat bg-cover object-cover"
       >
         <div class="space-y-4 text-center">

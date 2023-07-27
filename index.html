@@ -534,14 +534,17 @@
             <a class="text-red-500" href="#">Details</a>
           </div>
         </div>
-        <div>
-          <button class="btn btn-primary">Shop</button>
+      </section>
+      <!-- more button section  -->
+      <section>
+        <div class="flex items-center justify-center py-20">
+          <button class="btn btn-primary bg-red-500 text-white border-none">Shop All</button>
         </div>
       </section>
       <!-- team section  -->
       <section
         style="background-image: url(./images/team.png)"
-        class="team-section py-10 bg-no-repeat bg-cover object-cover"
+        class="team-section py-20 bg-no-repeat bg-cover object-cover"
       >
         <div class="space-y-4 text-center">
           <h2 class="text-5xl font-extrabold text-white">
@@ -554,7 +557,7 @@
           </p>
         </div>
         <!-- team card container -->
-        <div class="flex items-center justify-center gap-10 flex-wrap py-10">
+        <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 items-center justify-center gap-10  py-10">
           <!-- team card 1 -->
           <div class="flex items-center flex-col space-y-2">
             <img src="./images/member1.png" alt="" />
@@ -602,7 +605,7 @@
         </div>
       </section>
       <!-- Why Choose Us section  -->
-      <section class="py-20">
+      <section class="py-28">
         <div class="space-y-4 text-center text-black">
           <h2 class="text-5xl font-extrabold">Why Choose Us</h2>
           <p>
@@ -612,17 +615,19 @@
           </p>
         </div>
         <!-- Choose us container  -->
-        <div class="flex flex-col lg:flex-row-reverse lg:justify-between items-center justify-center">
+        <div
+          class="flex flex-col lg:flex-row lg:justify-between items-center justify-center lg:py-20 py-5"
+        >
           <!-- choose box left-->
           <div class="space-y-10">
             <!-- chosse 1 -->
             <div
-              class="flex flex-col items-center justify-center gap-4 text-center"
+              class="flex flex-col items-center justify-center gap-4 text-center lg:flex-row lg:text-left"
             >
               <div>
                 <i class="fa-solid fa-users p-5 rounded-full text-3xl"></i>
               </div>
-              <div class="space-y-4 flex flex-col items-center">
+              <div class="space-y-4 flex flex-col items-center lg:items-start">
                 <h3 class="text-2xl font-extrabold">Dedicated Team</h3>
                 <div class="w-28 h-[1px] bg-[#121212]"></div>
                 <p>
@@ -633,12 +638,12 @@
             </div>
             <!-- chosse 2 -->
             <div
-              class="flex flex-col items-center justify-center gap-4 text-center"
+              class="flex flex-col items-center justify-center gap-4 text-center lg:flex-row lg:text-left"
             >
               <div>
                 <i class="fa-solid fa-users p-5 rounded-full text-3xl"></i>
               </div>
-              <div class="space-y-4 flex flex-col items-center">
+              <div class="space-y-4 flex flex-col items-center lg:items-start">
                 <h3 class="text-2xl font-extrabold">Dedicated Team</h3>
                 <div class="w-28 h-[1px] bg-[#121212]"></div>
                 <p>
@@ -649,12 +654,12 @@
             </div>
             <!-- chosse 3 -->
             <div
-              class="flex flex-col items-center justify-center gap-4 text-center"
+              class="flex flex-col items-center justify-center gap-4 text-center lg:flex-row lg:text-left"
             >
               <div>
                 <i class="fa-solid fa-users p-5 rounded-full text-3xl"></i>
               </div>
-              <div class="space-y-4 flex flex-col items-center">
+              <div class="space-y-4 flex flex-col items-center lg:items-start">
                 <h3 class="text-2xl font-extrabold">Dedicated Team</h3>
                 <div class="w-28 h-[1px] bg-[#121212]"></div>
                 <p>
@@ -665,19 +670,19 @@
             </div>
           </div>
           <!-- choose box middle-->
-          <div class="-order-1">
+          <div class="-order-1 lg:order-none">
             <img src="./images/whychoose1.png" alt="" />
           </div>
           <!-- choose box right-->
           <div class="space-y-10">
             <!-- chosse 1 -->
             <div
-              class="flex flex-col items-center justify-center gap-4 text-center"
+              class="flex flex-col items-center justify-center gap-4 text-center lg:flex-row-reverse lg:text-right"
             >
               <div>
                 <i class="fa-solid fa-users p-5 rounded-full text-3xl"></i>
               </div>
-              <div class="space-y-4 flex flex-col items-center">
+              <div class="space-y-4 flex flex-col items-center lg:items-end">
                 <h3 class="text-2xl font-extrabold">Dedicated Team</h3>
                 <div class="w-28 h-[1px] bg-[#121212]"></div>
                 <p>
@@ -688,12 +693,12 @@
             </div>
             <!-- chosse 2 -->
             <div
-              class="flex flex-col items-center justify-center gap-4 text-center"
+              class="flex flex-col items-center justify-center gap-4 text-center lg:flex-row-reverse lg:text-right"
             >
               <div>
                 <i class="fa-solid fa-users p-5 rounded-full text-3xl"></i>
               </div>
-              <div class="space-y-4 flex flex-col items-center">
+              <div class="space-y-4 flex flex-col items-center lg:items-end">
                 <h3 class="text-2xl font-extrabold">Dedicated Team</h3>
                 <div class="w-28 h-[1px] bg-[#121212]"></div>
                 <p>
@@ -704,12 +709,12 @@
             </div>
             <!-- chosse 3 -->
             <div
-              class="flex flex-col items-center justify-center gap-4 text-center"
+              class="flex flex-col items-center justify-center gap-4 text-center lg:flex-row-reverse lg:text-right"
             >
               <div>
                 <i class="fa-solid fa-users p-5 rounded-full text-3xl"></i>
               </div>
-              <div class="space-y-4 flex flex-col items-center">
+              <div class="space-y-4 flex flex-col items-center lg:items-end">
                 <h3 class="text-2xl font-extrabold">Dedicated Team</h3>
                 <div class="w-28 h-[1px] bg-[#121212]"></div>
                 <p>

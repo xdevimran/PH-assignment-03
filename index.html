@@ -79,7 +79,7 @@
 
       <!-- mobile navbar  -->
       <div
-        class="navbar container mx-auto flex justify-between my-10 items-center p-5 rounded-full  lg:hidden"
+        class="navbar container mx-auto flex justify-between my-10 items-center p-5 rounded-full lg:hidden"
       >
         <div class="flex-1">
           <img src="./images/logo.png" alt="" />
@@ -107,7 +107,7 @@
         </div>
       </div>
       <!-- slider section start  -->
-      <div class="container mx-auto  relative flex items-center justify-center">
+      <div class="container mx-auto relative flex items-center justify-center">
         <div class="absolute text-center space-y-4 z-10">
           <h1 class="lg:text-7xl text-3xl font-extrabold text-white">
             Exotic tastes at your <br />
@@ -161,7 +161,7 @@
       <!-- slider section end  -->
       <!-- fruit item section for desktop design  -->
       <section
-        class="container mx-auto flex flex-row items-center justify-between bg-white rounded-2xl p-3 text-trueGray-900 max-w-[1200px] relative -top-20 shadow-xl invisible lg:visible"
+        class="container mx-auto flex-row items-center justify-between bg-white rounded-2xl p-3 text-trueGray-900 max-w-[1200px] relative -top-20 shadow-xl hidden lg:flex"
       >
         <div class="flex items-center flex-col space-y-4">
           <img src="./images/fruit1.png" alt="" />
@@ -188,19 +188,19 @@
     <!-- main  -->
     <main class="container mx-auto">
       <!-- deal of the day section  -->
-      <section class="flex justify-between items-center sm:flex-wrap my-20">
-        <div class="space-y-4">
-          <h2 class="text-5xl font-extrabold">Deal of the day</h2>
-          <p class="text-base">
+      <section class="flex lg:justify-between justify-center flex-wrap py-10">
+        <div class="space-y-4 lg:text-start text-center">
+          <h2 class="lg:text-5xl text-xl font-extrabold">Deal of the day</h2>
+          <p class="text-base lg:p-0 px-10">
             Contrary to popular belief, is not simply random text. It has roots
             in a piece of classical <br />
             Latin literature from 45 BC, making it over 2000 years old.
           </p>
         </div>
         <div>
-          <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+          <div class="grid grid-flow-col gap-5 text-center auto-cols-max py-4">
             <div class="flex flex-col">
-              <span class="countdown font-extrabold text-5xl">
+              <span class="countdown font-extrabold lg:text-5xl text-3xl">
                 <span style="--value: 15"></span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -220,7 +220,7 @@
               days
             </div>
             <div class="flex flex-col">
-              <span class="countdown font-extrabold text-5xl">
+              <span class="countdown font-extrabold lg:text-5xl text-3xl">
                 <span style="--value: 10"></span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -240,7 +240,7 @@
               hours
             </div>
             <div class="flex flex-col">
-              <span class="countdown font-extrabold text-5xl">
+              <span class="countdown font-extrabold lg:text-5xl text-3xl">
                 <span style="--value: 24"></span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -260,8 +260,8 @@
               min
             </div>
             <div class="flex flex-col">
-              <span class="countdown font-extrabold text-5xl">
-                <span class="text-5xl" style="--value: 27"></span>
+              <span class="countdown font-extrabold lg:text-5xl text-3xl">
+                <span class="z" style="--value: 27"></span>
               </span>
               sec
             </div>
@@ -270,7 +270,9 @@
       </section>
       <!-- Rating card  -->
       <section>
-        <div class="grid lg:grid-cols-4 items-center justify-center gap-5">
+        <div
+          class="grid lg:grid-cols-4 md:grid-cols-2 items-center justify-center gap-5"
+        >
           <!-- card 1 -->
           <div
             class="flex flex-col items-center justify-center border-2 white-500 p-14 rounded-md space-y-4"
@@ -532,14 +534,15 @@
             <a class="text-red-500" href="#">Details</a>
           </div>
         </div>
-        <h1
-          class="text-center bg-red-500 text-white font-bold block my-8 cursor-pointer"
-        >
-          Shop More
-        </h1>
+        <div>
+          <button class="btn btn-primary">Shop</button>
+        </div>
       </section>
       <!-- team section  -->
-      <section class="team-section bg-green-700 py-10">
+      <section
+        style="background-image: url(./images/team.png)"
+        class="team-section py-10 bg-no-repeat bg-cover object-cover"
+      >
         <div class="space-y-4 text-center">
           <h2 class="text-5xl font-extrabold text-white">
             Meet the team section
@@ -609,96 +612,110 @@
           </p>
         </div>
         <!-- Choose us container  -->
-        <div class="flex justify-between my-10">
+        <div class="flex flex-col lg:flex-row-reverse lg:justify-between items-center justify-center">
           <!-- choose box left-->
           <div class="space-y-10">
             <!-- chosse 1 -->
-            <div class="flex gap-4">
+            <div
+              class="flex flex-col items-center justify-center gap-4 text-center"
+            >
               <div>
                 <i class="fa-solid fa-users p-5 rounded-full text-3xl"></i>
               </div>
-              <div class="space-y-4">
+              <div class="space-y-4 flex flex-col items-center">
                 <h3 class="text-2xl font-extrabold">Dedicated Team</h3>
+                <div class="w-28 h-[1px] bg-[#121212]"></div>
                 <p>
                   Professional employees are there for you to pick <br />
                   the most amazing and fresh fruits.
                 </p>
-                <div class="w-28 h-[1px] bg-[#121212]"></div>
               </div>
             </div>
             <!-- chosse 2 -->
-            <div class="flex gap-4">
+            <div
+              class="flex flex-col items-center justify-center gap-4 text-center"
+            >
               <div>
                 <i class="fa-solid fa-users p-5 rounded-full text-3xl"></i>
               </div>
-              <div class="space-y-4">
+              <div class="space-y-4 flex flex-col items-center">
                 <h3 class="text-2xl font-extrabold">Dedicated Team</h3>
+                <div class="w-28 h-[1px] bg-[#121212]"></div>
                 <p>
                   Professional employees are there for you to pick <br />
                   the most amazing and fresh fruits.
                 </p>
-                <div class="w-28 h-[1px] bg-[#121212]"></div>
               </div>
             </div>
             <!-- chosse 3 -->
-            <div class="flex gap-4">
+            <div
+              class="flex flex-col items-center justify-center gap-4 text-center"
+            >
               <div>
                 <i class="fa-solid fa-users p-5 rounded-full text-3xl"></i>
               </div>
-              <div class="space-y-4">
+              <div class="space-y-4 flex flex-col items-center">
                 <h3 class="text-2xl font-extrabold">Dedicated Team</h3>
+                <div class="w-28 h-[1px] bg-[#121212]"></div>
                 <p>
                   Professional employees are there for you to pick <br />
                   the most amazing and fresh fruits.
                 </p>
-                <div class="w-28 h-[1px] bg-[#121212]"></div>
               </div>
             </div>
           </div>
           <!-- choose box middle-->
-          <div><img src="./images/whychoose1.png" alt="" /></div>
+          <div class="-order-1">
+            <img src="./images/whychoose1.png" alt="" />
+          </div>
           <!-- choose box right-->
-          <div class="text-right space-y-10">
+          <div class="space-y-10">
             <!-- chosse 1 -->
-            <div class="flex gap-4 flex-row-reverse text-right">
+            <div
+              class="flex flex-col items-center justify-center gap-4 text-center"
+            >
               <div>
                 <i class="fa-solid fa-users p-5 rounded-full text-3xl"></i>
               </div>
-              <div class="space-y-4">
+              <div class="space-y-4 flex flex-col items-center">
                 <h3 class="text-2xl font-extrabold">Dedicated Team</h3>
+                <div class="w-28 h-[1px] bg-[#121212]"></div>
                 <p>
                   Professional employees are there for you to pick <br />
                   the most amazing and fresh fruits.
                 </p>
-                <div class="w-28 h-[1px] bg-[#121212] inline-block"></div>
               </div>
             </div>
             <!-- chosse 2 -->
-            <div class="flex gap-4 flex-row-reverse">
+            <div
+              class="flex flex-col items-center justify-center gap-4 text-center"
+            >
               <div>
                 <i class="fa-solid fa-users p-5 rounded-full text-3xl"></i>
               </div>
-              <div class="space-y-4">
+              <div class="space-y-4 flex flex-col items-center">
                 <h3 class="text-2xl font-extrabold">Dedicated Team</h3>
+                <div class="w-28 h-[1px] bg-[#121212]"></div>
                 <p>
                   Professional employees are there for you to pick <br />
                   the most amazing and fresh fruits.
                 </p>
-                <div class="w-28 h-[1px] bg-[#121212] inline-block"></div>
               </div>
             </div>
             <!-- chosse 3 -->
-            <div class="flex gap-4 flex-row-reverse">
+            <div
+              class="flex flex-col items-center justify-center gap-4 text-center"
+            >
               <div>
                 <i class="fa-solid fa-users p-5 rounded-full text-3xl"></i>
               </div>
-              <div class="space-y-4">
+              <div class="space-y-4 flex flex-col items-center">
                 <h3 class="text-2xl font-extrabold">Dedicated Team</h3>
+                <div class="w-28 h-[1px] bg-[#121212]"></div>
                 <p>
                   Professional employees are there for you to pick <br />
                   the most amazing and fresh fruits.
                 </p>
-                <div class="w-28 h-[1px] bg-[#121212] inline-block"></div>
               </div>
             </div>
           </div>
